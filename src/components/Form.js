@@ -67,7 +67,7 @@ const UserForm = () => {
     }
     const handlePasswordConfirm = (e) => {
         setPasswordConfirm(e.target.value)
-        if(e.target.value != password) {
+        if(e.target.value !== password) {
             setPasswordConfirmError("Passwords do not match");
         } else {
             setPasswordConfirmError("");
